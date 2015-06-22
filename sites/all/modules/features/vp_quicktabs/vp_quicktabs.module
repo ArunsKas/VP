@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the VP quicktabs feature.
+ */
+
+include_once 'vp_quicktabs.features.inc';

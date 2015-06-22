@@ -1,0 +1,20 @@
+name = VP
+description = VP is subtheme of Clean theme.
+core = 7.x
+
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[content] = Content
+regions[header] = Header
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[footer] = Footer
+regions[highlighted] = Highlighted
+
+stylesheets[all][] = styles/vp.content.css
+
+version = "7.x-1.0"
+core = "7.x"
+project = "vp"
+base theme = clean
+

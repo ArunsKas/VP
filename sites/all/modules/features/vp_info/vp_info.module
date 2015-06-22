@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the VP skelbimai feature.
+ */
+
+include_once 'vp_info.features.inc';

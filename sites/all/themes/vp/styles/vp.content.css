@@ -1,0 +1,97 @@
+/**
+ * @file
+ * Content styles.
+ */
+
+h1#site-name a {
+    color: #3F5694;
+}
+h1#site-name a:hover {
+    color: #3A5CB8;
+}
+#site-slogan {
+    color: #911;
+    font-size: 120%;
+    font-weight: bold;
+    border-top: 1px solid #911;
+    padding-top:10px;
+    margin-bottom: 20px;
+}
+
+.view-filters .container-inline-date label {
+  display: none;
+}
+.view-filters {
+    background-color: #D9DCE4;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#edit-field-purchase-start-date-value-min-wrapper,
+#edit-field-purchase-start-date-value-max-wrapper,
+#edit-field-winner-date-value-min-wrapper,
+#edit-field-winner-date-value-max-wrapper,
+#edit-field-contract-date-value-min-wrapper,
+#edit-field-contract-date-value-max-wrapper {
+    float: left;
+}
+#block-system-user-menu {
+    float:right;
+    position: relative;
+    height: 20px;
+    right: 0;
+    top: -25px;
+    
+}
+#block-system-user-menu ul {
+    margin-bottom: 0;
+}
+#block-system-user-menu li {
+    float: left; 
+    /* position: relative; */
+    margin-right: 10px;
+    list-style-type: none;
+}
+
+.row {   
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #BBB;
+}
+.quicktabs-tabpage {
+    padding-top: 10px;
+}
+.views-field-created {
+    color: #999999;
+    font-size: 90%;
+}
+#footer #block-block-1 {
+    text-align: center;
+    font-size: 90%;
+    background-color: #CCCCCC;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    margin-bottom: 0;
+}
+.tabs ul.tabs.primary {
+    border-bottom: 1px solid #AAAAAA;
+    padding-bottom: 4px;
+}
+.tabs ul.tabs.primary li {
+    padding: 5px;
+}
+.tabs ul.tabs.primary li.active {
+    border-left: 1px solid #AAAAAA;
+    border-right: 1px solid #AAAAAA;
+    border-top: 1px solid #AAAAAA;
+    border-bottom: 1px solid #FFFFFF;
+}
+.view-id-list_of_forms.view-display-id-block_4 .green {
+    background-color: #5E740B;
+    color: #FFFFFF;
+    padding: 2px;
+}
+.view-id-list_of_forms.view-display-id-block_4 .grey {
+    background-color: #969696;
+    color: #FFFFFF;
+    padding: 2px;
+}

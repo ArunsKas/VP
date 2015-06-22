@@ -1,0 +1,101 @@
+<?php
+/**
+ * @file
+ * Code for the VP formos feature.
+ */
+
+include_once 'vp_forms.features.inc';
+
+
+
+function vp_forms_preprocess_views_view_table(&$vars) {
+  if ($vars['view']->name == 'list_of_forms'){
+  // add long table header label beacouse UI has limitation on lenght
+    if (isset($vars['header']['field_subcontractor_perc'])) {
+	  $subcontractor_perc_header = 'Jei žinoma, nurodyti pirkimo sutarties įsipareigojimų dalį, kuriai laimėtojas ketina pasitelkti trečiuosius asmenis, kaip subrangovus (% arba Eur)';
+	  $vars['header']['field_subcontractor_perc'] = $subcontractor_perc_header;
+	}
+  }
+}
+
+function vp_forms_views_pre_render(&$view) {
+    if (($view->name == 'list_of_forms') && ($view->current_display == 'block_4')) {
+        
+        $results = $view->result;
+        foreach ($results as $key => $result) {
+            $nid = $result->nid;
+            $node = node_load($nid);
+            
+            // check F1
+            $has_title = FALSE;
+            if (strlen($node->title) > 0) {
+                $has_title = TRUE;
+            }
+            $has_purchase_method = FALSE;
+            if (sizeof($node->field_purchase_method) > 0) {
+                $has_purchase_method = TRUE;
+            }
+            $has_purchase_type = FALSE;
+            if (sizeof($node->field_purchase_type) > 0) {
+                $has_purchase_type = TRUE;
+            }
+            $has_purchase_causes = FALSE;
+            if (sizeof($node->field_purchase_causes) > 0) {
+                $has_purchase_causes = TRUE;
+            }
+            $has_purchase_start_date = FALSE;
+            if (sizeof($node->field_purchase_start_date) > 0) {
+                $has_purchase_start_date = TRUE;
+            }
+            $completed_f1 = FALSE;
+            if ($has_title && $has_purchase_method && $has_purchase_type && $has_purchase_causes && $has_purchase_start_date) {
+                $completed_f1 = TRUE;
+            }
+            $view->result[$key]->completed_f1 = $completed_f1;
+            
+            // check F2
+            $has_winner_title = FALSE;
+            if (sizeof($node->field_winner_title) > 0) {
+                $has_winner_title = TRUE;
+            }
+            $has_purchase_price = FALSE;
+            if (sizeof($node->field_purchase_price) > 0) {
+                $has_purchase_price = TRUE;
+            }
+            $has_winner_reason = FALSE;
+            if (sizeof($node->field_winner_reason) > 0) {
+                $has_winner_reason = TRUE;
+            }
+            $has_subcontractor_perc = FALSE;
+            if (sizeof($node->field_subcontractor_perc) > 0) {
+                $has_subcontractor_perc = TRUE;
+            }
+            $has_winner_date = FALSE;
+            if (sizeof($node->field_winner_date) > 0) {
+                $has_winner_date = TRUE;
+            }    
+            $completed_f2 = FALSE;
+            if ($completed_f1 && $has_winner_title && $has_purchase_price && $has_winner_reason && $has_subcontractor_perc && $has_winner_date) {
+                $completed_f2 = TRUE;
+            }
+            $view->result[$key]->completed_f2 = $completed_f2;
+            
+            // check F3
+            $has_final_price = FALSE;
+            if (sizeof($node->field_final_price) > 0) {
+                $has_final_price = TRUE;
+            }
+            $has_contract_date = FALSE;
+            if (sizeof($node->field_contract_date) > 0) {
+                $has_contract_date = TRUE;
+            }
+            $completed_f3 = FALSE;
+            if ($completed_f1 && $completed_f2 && $has_final_price && $has_contract_date ) {
+                $completed_f3 = TRUE;
+            }
+            $view->result[$key]->completed_f3 = $completed_f3;
+            
+        }
+        
+    }
+}

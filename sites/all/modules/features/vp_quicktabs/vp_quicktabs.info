@@ -1,0 +1,11 @@
+name = VP quicktabs
+core = 7.x
+package = VP
+dependencies[] = ctools
+dependencies[] = quicktabs
+dependencies[] = quicktabs_tabstyles
+dependencies[] = vp_forms
+dependencies[] = vp_info
+features[ctools][] = quicktabs:quicktabs:1
+features[features_api][] = api:2
+features[quicktabs][] = vp_forms
