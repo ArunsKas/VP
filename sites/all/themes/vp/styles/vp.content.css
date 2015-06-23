@@ -95,3 +95,14 @@ h1#site-name a:hover {
     color: #FFFFFF;
     padding: 2px;
 }
+dl {
+  margin: 0 0 20px;
+}
+dl a {
+    font-weight: bold;
+}
+dl dd,
+dl dl {
+  margin-left: 20px; /* LTR */
+  margin-bottom: 10px;
+}

@@ -11,6 +11,7 @@ dependencies[] = override_node_options
 dependencies[] = view_unpublished
 features[features_api][] = api:2
 features[user_permission][] = access administration menu
+features[user_permission][] = access content
 features[user_permission][] = access content overview
 features[user_permission][] = access forms node view
 features[user_permission][] = access vp_info node view

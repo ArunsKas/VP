@@ -40,6 +40,35 @@ function vp_forms_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_f1|node|forms|default';
+  $field_group->group_name = 'group_f1';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'forms';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'F1',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_purchase_method',
+      1 => 'field_purchase_type',
+      2 => 'field_purchase_causes',
+      3 => 'field_purchase_start_date',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-f1 field-group-fieldset',
+      ),
+    ),
+  );
+  $export['group_f1|node|forms|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_f1|node|forms|form';
   $field_group->group_name = 'group_f1';
   $field_group->entity_type = 'node';
@@ -66,6 +95,36 @@ function vp_forms_field_group_info() {
     ),
   );
   $export['group_f1|node|forms|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_f2|node|forms|default';
+  $field_group->group_name = 'group_f2';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'forms';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'F2',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_winner_title',
+      1 => 'field_purchase_price',
+      2 => 'field_winner_reason',
+      3 => 'field_subcontractor_perc',
+      4 => 'field_winner_date',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-f2 field-group-fieldset',
+      ),
+    ),
+  );
+  $export['group_f2|node|forms|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -97,6 +156,33 @@ function vp_forms_field_group_info() {
     ),
   );
   $export['group_f2|node|forms|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_f3|node|forms|default';
+  $field_group->group_name = 'group_f3';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'forms';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'F3',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_final_price',
+      1 => 'field_contract_date',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-f3 field-group-fieldset',
+      ),
+    ),
+  );
+  $export['group_f3|node|forms|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

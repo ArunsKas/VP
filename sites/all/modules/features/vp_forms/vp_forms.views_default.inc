@@ -260,15 +260,12 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Laukelis: Turinys: Pavadinimas */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = 'Pirkimo objektas (pavadinimas)';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Laukelis: Turinys: Pirkimo objektas */
+  $handler->display->display_options['fields']['field_purchase_title_full']['id'] = 'field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['table'] = 'field_data_field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['field'] = 'field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['label'] = '';
+  $handler->display->display_options['fields']['field_purchase_title_full']['element_label_colon'] = FALSE;
   /* Laukelis: Turinys: Pirkimo objekto tipas */
   $handler->display->display_options['fields']['field_purchase_type']['id'] = 'field_purchase_type';
   $handler->display->display_options['fields']['field_purchase_type']['table'] = 'field_data_field_purchase_type';
@@ -419,15 +416,12 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Laukelis: Turinys: Pavadinimas */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = 'Pirkimo objektas (pavadinimas)';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Laukelis: Turinys: Pirkimo objektas */
+  $handler->display->display_options['fields']['field_purchase_title_full']['id'] = 'field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['table'] = 'field_data_field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['field'] = 'field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['label'] = '';
+  $handler->display->display_options['fields']['field_purchase_title_full']['element_label_colon'] = FALSE;
   /* Laukelis: Turinys: Laimėjusio dalyvio pavadinimas */
   $handler->display->display_options['fields']['field_winner_title']['id'] = 'field_winner_title';
   $handler->display->display_options['fields']['field_winner_title']['table'] = 'field_data_field_winner_title';
@@ -581,15 +575,12 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Laukelis: Turinys: Pavadinimas */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = 'Pirkimo objektas (pavadinimas)';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Laukelis: Turinys: Pirkimo objektas */
+  $handler->display->display_options['fields']['field_purchase_title_full']['id'] = 'field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['table'] = 'field_data_field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['field'] = 'field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['label'] = '';
+  $handler->display->display_options['fields']['field_purchase_title_full']['element_label_colon'] = FALSE;
   /* Laukelis: Turinys: Laimėjusio dalyvio pavadinimas */
   $handler->display->display_options['fields']['field_winner_title']['id'] = 'field_winner_title';
   $handler->display->display_options['fields']['field_winner_title']['table'] = 'field_data_field_winner_title';
@@ -704,18 +695,15 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nothing']['alter']['path'] = 'node/[nid]/edit?destination=node';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Pavadinimas */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['text'] = '[title] </ br>
+  /* Laukelis: Turinys: Pirkimo objektas */
+  $handler->display->display_options['fields']['field_purchase_title_full']['id'] = 'field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['table'] = 'field_data_field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['field'] = 'field_purchase_title_full';
+  $handler->display->display_options['fields']['field_purchase_title_full']['label'] = '';
+  $handler->display->display_options['fields']['field_purchase_title_full']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_purchase_title_full']['alter']['text'] = '[field_purchase_title_full] </ br>
 [nothing]';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['fields']['field_purchase_title_full']['element_label_colon'] = FALSE;
   /* Laukelis: F1 */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
@@ -828,7 +816,7 @@ function vp_forms_views_default_views() {
     t('‹ '),
     t(' ›'),
     t('Nid'),
-    t('[title] </ br>
+    t('[field_purchase_title_full] </ br>
 [nothing]'),
     t('[nothing_1]
 [nothing_2]
