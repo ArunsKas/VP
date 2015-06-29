@@ -213,6 +213,19 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Išvalyti';
   $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Rikiuoti pagal';
   $handler->display->display_options['exposed_form']['options']['autosubmit'] = TRUE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Eilučių kiekis';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options'] = '3, 10, 20, 50, 100';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Visos -';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '« pirmas';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ ankstesnis';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'kitas  ›';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'paskutinis  »';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -336,26 +349,23 @@ function vp_forms_views_default_views() {
     3 => 0,
   );
   /* Filter criterion: Turinys: Pirkimo pradžios data (field_purchase_start_date) */
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['id'] = 'field_purchase_start_date_value';
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['table'] = 'field_data_field_purchase_start_date';
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['field'] = 'field_purchase_start_date_value';
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['operator'] = 'between';
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['expose']['operator_id'] = 'field_purchase_start_date_value_op';
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['expose']['label'] = 'Laikotarpis';
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['expose']['operator'] = 'field_purchase_start_date_value_op';
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['expose']['identifier'] = 'field_purchase_start_date_value';
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['expose']['remember_roles'] = array(
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['id'] = 'field_purchase_start_date_value_2';
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['table'] = 'field_data_field_purchase_start_date';
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['field'] = 'field_purchase_start_date_value';
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['expose']['operator_id'] = 'field_purchase_start_date_value_2_op';
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['expose']['label'] = 'Data';
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['expose']['operator'] = 'field_purchase_start_date_value_2_op';
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['expose']['identifier'] = 'field_purchase_start_date_value_2';
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
     4 => 0,
   );
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['form_type'] = 'date_popup';
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['default_date'] = 'now - 14 day';
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['default_to_date'] = 'now';
-  $handler->display->display_options['filters']['field_purchase_start_date_value']['year_range'] = '-3:+0';
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['granularity'] = 'month';
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_purchase_start_date_value_2']['year_range'] = '-3:+0';
 
   /* Display: F2 */
   $handler = $view->new_display('block', 'F2', 'block_2');
@@ -364,6 +374,19 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['display_description'] = 'Informacija apie nustatytus pirkimų laimėtojus ir ketinamas sudaryti sutartis';
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Eilučių kiekis';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options'] = '3, 10, 20, 50, 100';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Visos -';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '« pirmas';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ ankstesnis';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'kitas  ›';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'paskutinis  »';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -506,26 +529,23 @@ function vp_forms_views_default_views() {
     3 => 0,
   );
   /* Filter criterion: Turinys: Laimėtojų nustatymo data (field_winner_date) */
-  $handler->display->display_options['filters']['field_winner_date_value']['id'] = 'field_winner_date_value';
-  $handler->display->display_options['filters']['field_winner_date_value']['table'] = 'field_data_field_winner_date';
-  $handler->display->display_options['filters']['field_winner_date_value']['field'] = 'field_winner_date_value';
-  $handler->display->display_options['filters']['field_winner_date_value']['operator'] = 'between';
-  $handler->display->display_options['filters']['field_winner_date_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_winner_date_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_winner_date_value']['expose']['operator_id'] = 'field_winner_date_value_op';
-  $handler->display->display_options['filters']['field_winner_date_value']['expose']['label'] = 'Laikotarpis';
-  $handler->display->display_options['filters']['field_winner_date_value']['expose']['operator'] = 'field_winner_date_value_op';
-  $handler->display->display_options['filters']['field_winner_date_value']['expose']['identifier'] = 'field_winner_date_value';
-  $handler->display->display_options['filters']['field_winner_date_value']['expose']['remember_roles'] = array(
+  $handler->display->display_options['filters']['field_winner_date_value_2']['id'] = 'field_winner_date_value_2';
+  $handler->display->display_options['filters']['field_winner_date_value_2']['table'] = 'field_data_field_winner_date';
+  $handler->display->display_options['filters']['field_winner_date_value_2']['field'] = 'field_winner_date_value';
+  $handler->display->display_options['filters']['field_winner_date_value_2']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_winner_date_value_2']['expose']['operator_id'] = 'field_winner_date_value_2_op';
+  $handler->display->display_options['filters']['field_winner_date_value_2']['expose']['label'] = 'Data';
+  $handler->display->display_options['filters']['field_winner_date_value_2']['expose']['operator'] = 'field_winner_date_value_2_op';
+  $handler->display->display_options['filters']['field_winner_date_value_2']['expose']['identifier'] = 'field_winner_date_value_2';
+  $handler->display->display_options['filters']['field_winner_date_value_2']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
     4 => 0,
   );
-  $handler->display->display_options['filters']['field_winner_date_value']['form_type'] = 'date_popup';
-  $handler->display->display_options['filters']['field_winner_date_value']['default_date'] = 'now - 14 day';
-  $handler->display->display_options['filters']['field_winner_date_value']['default_to_date'] = 'now';
-  $handler->display->display_options['filters']['field_winner_date_value']['year_range'] = '-3:+0';
+  $handler->display->display_options['filters']['field_winner_date_value_2']['granularity'] = 'month';
+  $handler->display->display_options['filters']['field_winner_date_value_2']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_winner_date_value_2']['year_range'] = '-3:+0';
 
   /* Display: F3 */
   $handler = $view->new_display('block', 'F3', 'block_3');
@@ -534,6 +554,19 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['display_description'] = 'Informacija apie sudarytas sutartis';
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Eilučių kiekis';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options'] = '3, 10, 20, 50, 100';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Visos -';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '« pirmas';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ ankstesnis';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'kitas  ›';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'paskutinis  »';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -652,26 +685,23 @@ function vp_forms_views_default_views() {
     3 => 0,
   );
   /* Filter criterion: Turinys: Sutarties sudarymo data (field_contract_date) */
-  $handler->display->display_options['filters']['field_contract_date_value']['id'] = 'field_contract_date_value';
-  $handler->display->display_options['filters']['field_contract_date_value']['table'] = 'field_data_field_contract_date';
-  $handler->display->display_options['filters']['field_contract_date_value']['field'] = 'field_contract_date_value';
-  $handler->display->display_options['filters']['field_contract_date_value']['operator'] = 'between';
-  $handler->display->display_options['filters']['field_contract_date_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_contract_date_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_contract_date_value']['expose']['operator_id'] = 'field_contract_date_value_op';
-  $handler->display->display_options['filters']['field_contract_date_value']['expose']['label'] = 'Laikotarpis';
-  $handler->display->display_options['filters']['field_contract_date_value']['expose']['operator'] = 'field_contract_date_value_op';
-  $handler->display->display_options['filters']['field_contract_date_value']['expose']['identifier'] = 'field_contract_date_value';
-  $handler->display->display_options['filters']['field_contract_date_value']['expose']['remember_roles'] = array(
+  $handler->display->display_options['filters']['field_contract_date_value_2']['id'] = 'field_contract_date_value_2';
+  $handler->display->display_options['filters']['field_contract_date_value_2']['table'] = 'field_data_field_contract_date';
+  $handler->display->display_options['filters']['field_contract_date_value_2']['field'] = 'field_contract_date_value';
+  $handler->display->display_options['filters']['field_contract_date_value_2']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_contract_date_value_2']['expose']['operator_id'] = 'field_contract_date_value_2_op';
+  $handler->display->display_options['filters']['field_contract_date_value_2']['expose']['label'] = 'Data';
+  $handler->display->display_options['filters']['field_contract_date_value_2']['expose']['operator'] = 'field_contract_date_value_2_op';
+  $handler->display->display_options['filters']['field_contract_date_value_2']['expose']['identifier'] = 'field_contract_date_value_2';
+  $handler->display->display_options['filters']['field_contract_date_value_2']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
     4 => 0,
   );
-  $handler->display->display_options['filters']['field_contract_date_value']['form_type'] = 'date_popup';
-  $handler->display->display_options['filters']['field_contract_date_value']['default_date'] = 'now - 14 day';
-  $handler->display->display_options['filters']['field_contract_date_value']['default_to_date'] = 'now';
-  $handler->display->display_options['filters']['field_contract_date_value']['year_range'] = '-3:+0';
+  $handler->display->display_options['filters']['field_contract_date_value_2']['granularity'] = 'month';
+  $handler->display->display_options['filters']['field_contract_date_value_2']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_contract_date_value_2']['year_range'] = '-3:+0';
 
   /* Display: Vartotojo formos */
   $handler = $view->new_display('block', 'Vartotojo formos', 'block_4');
@@ -926,7 +956,7 @@ function vp_forms_views_default_views() {
     t('Informacija apie pradedamus pirkimus'),
     t('[redaguoti]'),
     t('Pavadinimas'),
-    t('Laikotarpis'),
+    t('Data'),
     t('F2'),
     t('Informacija apie nustatytus pirkimų laimėtojus ir ketinamas sudaryti sutartis'),
     t('F3'),
