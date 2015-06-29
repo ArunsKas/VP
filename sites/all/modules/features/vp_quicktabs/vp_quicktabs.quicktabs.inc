@@ -16,7 +16,7 @@ function vp_quicktabs_quicktabs_default_quicktabs() {
   $quicktabs->machine_name = 'vp_forms';
   $quicktabs->ajax = 0;
   $quicktabs->hide_empty_tabs = FALSE;
-  $quicktabs->default_tab = 0;
+  $quicktabs->default_tab = 1;
   $quicktabs->title = 'Viešieji pirkimai';
   $quicktabs->tabs = array(
     0 => array(
