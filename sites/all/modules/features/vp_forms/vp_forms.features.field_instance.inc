@@ -481,7 +481,8 @@ function vp_forms_field_default_field_instances() {
       'module' => 'select_or_other',
       'settings' => array(
         'available_options' => 'lowest_price|mažiausia kaina
-economy|ekonomiškai naudingiausias pasiūlymas',
+economy|ekonomiškai naudingiausias pasiūlymas
+dok_kriterij|perkančiosios organizacijos pirkimo dokumentuose nustatyti su pirkimo objektu susiję kriterijai',
         'available_options_php' => '',
         'markup_available_options_php' => '&lt;joks&gt;',
         'other' => 'Kita',

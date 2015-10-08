@@ -531,7 +531,7 @@ function vp_core_strongarm() {
     'domain' => '',
     'prefix' => 'lt',
     'weight' => '0',
-    'javascript' => 'Rq-nrPzkTdx5p_9mE-NLjVHLyoFR4LYN81l2QFOEtgU',
+    'javascript' => '00HuOy8SSbHaa7NxkAoYD69ixWVmwcrs9bHckHO64pU',
   );
   $export['language_default'] = $strongarm;
 
@@ -613,13 +613,7 @@ function vp_core_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'module_filter_recent_modules';
   $strongarm->value = array(
-    'adminimal_admin_menu' => 1434702415,
-    'admin_menu_toolbar' => 1434702415,
-    'toolbar' => 1434702499,
-    'overlay' => 1434713380,
-    'uuid_path' => 1435045575,
-    'variable_admin' => 1435048206,
-    'variable_realm' => 1435048206,
+    'flood_unblock' => 1442905117,
   );
   $export['module_filter_recent_modules'] = $strongarm;
 
@@ -900,20 +894,6 @@ function vp_core_strongarm() {
     'favicon_upload' => '',
   );
   $export['theme_vp_settings'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'update_last_check';
-  $strongarm->value = 1435058241;
-  $export['update_last_check'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'update_last_email_notification';
-  $strongarm->value = 1434953821;
-  $export['update_last_email_notification'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
