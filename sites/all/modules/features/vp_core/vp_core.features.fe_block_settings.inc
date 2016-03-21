@@ -33,12 +33,6 @@ function vp_core_default_fe_block_settings() {
         'theme' => 'seven',
         'weight' => 0,
       ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
       'vp' => array(
         'region' => 'footer',
         'status' => 1,
@@ -69,12 +63,6 @@ function vp_core_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'stark' => array(
-        'region' => 'content',
-        'status' => 1,
-        'theme' => 'stark',
         'weight' => 0,
       ),
       'vp' => array(
@@ -109,12 +97,6 @@ function vp_core_default_fe_block_settings() {
         'theme' => 'seven',
         'weight' => 0,
       ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
       'vp' => array(
         'region' => '',
         'status' => 0,
@@ -145,12 +127,6 @@ function vp_core_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'stark' => array(
-        'region' => 'content',
-        'status' => 1,
-        'theme' => 'stark',
         'weight' => 0,
       ),
       'vp' => array(
@@ -185,12 +161,6 @@ function vp_core_default_fe_block_settings() {
         'theme' => 'seven',
         'weight' => 0,
       ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
       'vp' => array(
         'region' => '',
         'status' => 0,
@@ -221,12 +191,6 @@ function vp_core_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'seven',
-        'weight' => 10,
-      ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
         'weight' => 10,
       ),
       'vp' => array(
@@ -261,12 +225,6 @@ function vp_core_default_fe_block_settings() {
         'theme' => 'seven',
         'weight' => 0,
       ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
       'vp' => array(
         'region' => 'header',
         'status' => 1,
@@ -299,12 +257,6 @@ function vp_core_default_fe_block_settings() {
         'theme' => 'seven',
         'weight' => 10,
       ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
       'vp' => array(
         'region' => '',
         'status' => 0,
@@ -335,12 +287,6 @@ function vp_core_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
         'weight' => 0,
       ),
       'vp' => array(
@@ -375,12 +321,6 @@ function vp_core_default_fe_block_settings() {
         'theme' => 'seven',
         'weight' => 0,
       ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
       'vp' => array(
         'region' => '',
         'status' => 0,
@@ -411,12 +351,6 @@ function vp_core_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
         'weight' => 0,
       ),
       'vp' => array(
@@ -451,12 +385,6 @@ function vp_core_default_fe_block_settings() {
         'theme' => 'seven',
         'weight' => 0,
       ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
       'vp' => array(
         'region' => 'sidebar_first',
         'status' => 1,
@@ -489,12 +417,6 @@ function vp_core_default_fe_block_settings() {
         'theme' => 'seven',
         'weight' => 0,
       ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
       'vp' => array(
         'region' => '',
         'status' => 0,
@@ -525,12 +447,6 @@ function vp_core_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
         'weight' => 0,
       ),
       'vp' => array(

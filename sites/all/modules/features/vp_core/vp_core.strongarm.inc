@@ -531,7 +531,7 @@ function vp_core_strongarm() {
     'domain' => '',
     'prefix' => 'lt',
     'weight' => '0',
-    'javascript' => '00HuOy8SSbHaa7NxkAoYD69ixWVmwcrs9bHckHO64pU',
+    'javascript' => 'Cw83CpCwC-svCaG43RnmUZXod5GrMIiWyfU5q2I2uHg',
   );
   $export['language_default'] = $strongarm;
 
@@ -612,9 +612,7 @@ function vp_core_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'module_filter_recent_modules';
-  $strongarm->value = array(
-    'flood_unblock' => 1442905117,
-  );
+  $strongarm->value = array();
   $export['module_filter_recent_modules'] = $strongarm;
 
   $strongarm = new stdClass();

@@ -16,38 +16,31 @@ function vp_quicktabs_quicktabs_default_quicktabs() {
   $quicktabs->machine_name = 'vp_forms';
   $quicktabs->ajax = 0;
   $quicktabs->hide_empty_tabs = FALSE;
-  $quicktabs->default_tab = 1;
+  $quicktabs->default_tab = 0;
   $quicktabs->title = 'Viešieji pirkimai';
   $quicktabs->tabs = array(
     0 => array(
-      'bid' => 'views_delta_vp_info-block_1',
-      'hide_title' => 1,
-      'title' => 'Techninių specifikacijų projektai',
-      'weight' => '-100',
-      'type' => 'block',
-    ),
-    1 => array(
       'bid' => 'views_delta_list_of_forms-block_1',
       'hide_title' => 1,
       'title' => 'Vykdomi pirkimai',
       'weight' => '-99',
       'type' => 'block',
     ),
-    2 => array(
+    1 => array(
       'bid' => 'views_delta_list_of_forms-block_2',
       'hide_title' => 1,
       'title' => 'Nustatyti laimėtojai',
       'weight' => '-98',
       'type' => 'block',
     ),
-    3 => array(
+    2 => array(
       'bid' => 'views_delta_list_of_forms-block_3',
       'hide_title' => 1,
       'title' => 'Sudarytos sutartys',
       'weight' => '-97',
       'type' => 'block',
     ),
-    4 => array(
+    3 => array(
       'bid' => 'views_delta_vp_info-block_2',
       'hide_title' => 1,
       'title' => 'Neįvykę pirkimai',
@@ -64,7 +57,6 @@ function vp_quicktabs_quicktabs_default_quicktabs() {
   t('Neįvykę pirkimai');
   t('Nustatyti laimėtojai');
   t('Sudarytos sutartys');
-  t('Techninių specifikacijų projektai');
   t('Viešieji pirkimai');
   t('Vykdomi pirkimai');
 

@@ -10,7 +10,7 @@
 function vp_forms_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_contract_date'
+  // Exported field_base: 'field_contract_date'.
   $field_bases['field_contract_date'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -39,7 +39,7 @@ function vp_forms_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_final_price'
+  // Exported field_base: 'field_final_price'.
   $field_bases['field_final_price'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -60,7 +60,7 @@ function vp_forms_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_purchase_causes'
+  // Exported field_base: 'field_purchase_causes'.
   $field_bases['field_purchase_causes'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -81,7 +81,7 @@ function vp_forms_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_purchase_method'
+  // Exported field_base: 'field_purchase_method'.
   $field_bases['field_purchase_method'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -107,7 +107,7 @@ function vp_forms_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_purchase_price'
+  // Exported field_base: 'field_purchase_price'.
   $field_bases['field_purchase_price'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -128,7 +128,7 @@ function vp_forms_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_purchase_start_date'
+  // Exported field_base: 'field_purchase_start_date'.
   $field_bases['field_purchase_start_date'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -157,7 +157,7 @@ function vp_forms_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_purchase_title_full'
+  // Exported field_base: 'field_purchase_title_full'.
   $field_bases['field_purchase_title_full'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -176,7 +176,7 @@ function vp_forms_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_purchase_type'
+  // Exported field_base: 'field_purchase_type'.
   $field_bases['field_purchase_type'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -202,7 +202,7 @@ function vp_forms_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_subcontractor_perc'
+  // Exported field_base: 'field_subcontractor_perc'.
   $field_bases['field_subcontractor_perc'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -223,7 +223,7 @@ function vp_forms_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_winner_date'
+  // Exported field_base: 'field_winner_date'.
   $field_bases['field_winner_date'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -252,7 +252,7 @@ function vp_forms_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_winner_reason'
+  // Exported field_base: 'field_winner_reason'.
   $field_bases['field_winner_reason'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -273,7 +273,7 @@ function vp_forms_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_winner_title'
+  // Exported field_base: 'field_winner_title'.
   $field_bases['field_winner_title'] = array(
     'active' => 1,
     'cardinality' => 1,

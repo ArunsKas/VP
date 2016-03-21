@@ -60,14 +60,14 @@ function vp_forms_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* No results behavior: Globalus: Text area */
+  /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = 'Informacijos nėra';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
-  /* Laukelis: Turinys: Pavadinimas */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -75,49 +75,49 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Pirkimo objekto tipas */
+  /* Field: Content: Pirkimo objekto tipas */
   $handler->display->display_options['fields']['field_purchase_type']['id'] = 'field_purchase_type';
   $handler->display->display_options['fields']['field_purchase_type']['table'] = 'field_data_field_purchase_type';
   $handler->display->display_options['fields']['field_purchase_type']['field'] = 'field_purchase_type';
   $handler->display->display_options['fields']['field_purchase_type']['label'] = 'Pirkimo objekto tipas (prekės, paslaugos ar darbai)';
   $handler->display->display_options['fields']['field_purchase_type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_purchase_type']['type'] = 'taxonomy_term_reference_plain';
-  /* Laukelis: Turinys: Pirkimo būdas */
+  /* Field: Content: Pirkimo būdas */
   $handler->display->display_options['fields']['field_purchase_method']['id'] = 'field_purchase_method';
   $handler->display->display_options['fields']['field_purchase_method']['table'] = 'field_data_field_purchase_method';
   $handler->display->display_options['fields']['field_purchase_method']['field'] = 'field_purchase_method';
   $handler->display->display_options['fields']['field_purchase_method']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_purchase_method']['type'] = 'taxonomy_term_reference_plain';
-  /* Laukelis: Turinys: Priežastys dėl pirkimo būdo */
+  /* Field: Content: Priežastys dėl pirkimo būdo */
   $handler->display->display_options['fields']['field_purchase_causes']['id'] = 'field_purchase_causes';
   $handler->display->display_options['fields']['field_purchase_causes']['table'] = 'field_data_field_purchase_causes';
   $handler->display->display_options['fields']['field_purchase_causes']['field'] = 'field_purchase_causes';
   $handler->display->display_options['fields']['field_purchase_causes']['label'] = 'Priežastys, dėl kurių pasirinktas nurodytas pirkimo būdas (nurodomas Taisyklių punktas)';
   $handler->display->display_options['fields']['field_purchase_causes']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Laimėjusio dalyvio pavadinimas */
+  /* Field: Content: Laimėjusio dalyvio pavadinimas */
   $handler->display->display_options['fields']['field_winner_title']['id'] = 'field_winner_title';
   $handler->display->display_options['fields']['field_winner_title']['table'] = 'field_data_field_winner_title';
   $handler->display->display_options['fields']['field_winner_title']['field'] = 'field_winner_title';
-  /* Laukelis: Turinys: Numatoma bendra sutarties vertė Eur (su PVM) */
+  /* Field: Content: Numatoma bendra sutarties vertė Eur (su PVM) */
   $handler->display->display_options['fields']['field_purchase_price']['id'] = 'field_purchase_price';
   $handler->display->display_options['fields']['field_purchase_price']['table'] = 'field_data_field_purchase_price';
   $handler->display->display_options['fields']['field_purchase_price']['field'] = 'field_purchase_price';
-  /* Laukelis: Turinys: Priežastys, dėl kurių pasirinktas šis laimėtojas */
+  /* Field: Content: Priežastys, dėl kurių pasirinktas šis laimėtojas */
   $handler->display->display_options['fields']['field_winner_reason']['id'] = 'field_winner_reason';
   $handler->display->display_options['fields']['field_winner_reason']['table'] = 'field_data_field_winner_reason';
   $handler->display->display_options['fields']['field_winner_reason']['field'] = 'field_winner_reason';
   $handler->display->display_options['fields']['field_winner_reason']['type'] = 'select_or_other_formatter';
-  /* Laukelis: Turinys: Subrangovų dalis */
+  /* Field: Content: Subrangovų dalis */
   $handler->display->display_options['fields']['field_subcontractor_perc']['id'] = 'field_subcontractor_perc';
   $handler->display->display_options['fields']['field_subcontractor_perc']['table'] = 'field_data_field_subcontractor_perc';
   $handler->display->display_options['fields']['field_subcontractor_perc']['field'] = 'field_subcontractor_perc';
   $handler->display->display_options['fields']['field_subcontractor_perc']['label'] = 'Jei žinoma, nurodyti pirkimo sutarties įsipareigojimų dalį, kuriai laimėtojas ketina pasitelkti trečiuosius asmenis, kaip subran';
   $handler->display->display_options['fields']['field_subcontractor_perc']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Bendra galutinė sutarties vertė Eur (su PVM) */
+  /* Field: Content: Bendra galutinė sutarties vertė Eur (su PVM) */
   $handler->display->display_options['fields']['field_final_price']['id'] = 'field_final_price';
   $handler->display->display_options['fields']['field_final_price']['table'] = 'field_data_field_final_price';
   $handler->display->display_options['fields']['field_final_price']['field'] = 'field_final_price';
-  /* Laukelis: Turinys: Pirkimo pradžios data */
+  /* Field: Content: Pirkimo pradžios data */
   $handler->display->display_options['fields']['field_purchase_start_date']['id'] = 'field_purchase_start_date';
   $handler->display->display_options['fields']['field_purchase_start_date']['table'] = 'field_data_field_purchase_start_date';
   $handler->display->display_options['fields']['field_purchase_start_date']['field'] = 'field_purchase_start_date';
@@ -128,7 +128,7 @@ function vp_forms_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Laukelis: Turinys: Laimėtojų nustatymo data */
+  /* Field: Content: Laimėtojų nustatymo data */
   $handler->display->display_options['fields']['field_winner_date']['id'] = 'field_winner_date';
   $handler->display->display_options['fields']['field_winner_date']['table'] = 'field_data_field_winner_date';
   $handler->display->display_options['fields']['field_winner_date']['field'] = 'field_winner_date';
@@ -139,7 +139,7 @@ function vp_forms_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Laukelis: Turinys: Sutarties sudarymo data */
+  /* Field: Content: Sutarties sudarymo data */
   $handler->display->display_options['fields']['field_contract_date']['id'] = 'field_contract_date';
   $handler->display->display_options['fields']['field_contract_date']['table'] = 'field_data_field_contract_date';
   $handler->display->display_options['fields']['field_contract_date']['field'] = 'field_contract_date';
@@ -150,31 +150,31 @@ function vp_forms_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  /* Išrikiavimo kriterijus: Turinys: Pirkimo pradžios data (field_purchase_start_date) */
+  /* Sort criterion: Content: Pirkimo pradžios data (field_purchase_start_date) */
   $handler->display->display_options['sorts']['field_purchase_start_date_value']['id'] = 'field_purchase_start_date_value';
   $handler->display->display_options['sorts']['field_purchase_start_date_value']['table'] = 'field_data_field_purchase_start_date';
   $handler->display->display_options['sorts']['field_purchase_start_date_value']['field'] = 'field_purchase_start_date_value';
   $handler->display->display_options['sorts']['field_purchase_start_date_value']['order'] = 'DESC';
-  /* Išrikiavimo kriterijus: Turinys: Įrašo data */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['granularity'] = 'hour';
-  /* Filter criterion: Turinys: Paskelbtas */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Turinys: Tipas */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'forms' => 'forms',
   );
-  /* Filter criterion: Turinys: Pirkimo pradžios data (field_purchase_start_date) */
+  /* Filter criterion: Content: Pirkimo pradžios data (field_purchase_start_date) */
   $handler->display->display_options['filters']['field_purchase_start_date_value']['id'] = 'field_purchase_start_date_value';
   $handler->display->display_options['filters']['field_purchase_start_date_value']['table'] = 'field_data_field_purchase_start_date';
   $handler->display->display_options['filters']['field_purchase_start_date_value']['field'] = 'field_purchase_start_date_value';
@@ -193,7 +193,7 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['filters']['field_purchase_start_date_value']['default_date'] = 'now - 7 day';
   $handler->display->display_options['filters']['field_purchase_start_date_value']['default_to_date'] = 'now';
   $handler->display->display_options['filters']['field_purchase_start_date_value']['year_range'] = '-3:+0';
-  /* Filter criterion: Turinys: Pirkimo pradžios data (field_purchase_start_date) */
+  /* Filter criterion: Content: Pirkimo pradžios data (field_purchase_start_date) */
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['id'] = 'field_purchase_start_date_value_1';
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['table'] = 'field_data_field_purchase_start_date';
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['field'] = 'field_purchase_start_date_value';
@@ -276,32 +276,32 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Laukelis: Turinys: Pirkimo objektas */
+  /* Field: Content: Pirkimo objektas */
   $handler->display->display_options['fields']['field_purchase_title_full']['id'] = 'field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['table'] = 'field_data_field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['field'] = 'field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['label'] = 'Pirkimo objektas (pavadinimas)';
   $handler->display->display_options['fields']['field_purchase_title_full']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Pirkimo objekto tipas */
+  /* Field: Content: Pirkimo objekto tipas */
   $handler->display->display_options['fields']['field_purchase_type']['id'] = 'field_purchase_type';
   $handler->display->display_options['fields']['field_purchase_type']['table'] = 'field_data_field_purchase_type';
   $handler->display->display_options['fields']['field_purchase_type']['field'] = 'field_purchase_type';
   $handler->display->display_options['fields']['field_purchase_type']['label'] = 'Pirkimo objekto tipas (prekės, paslaugos ar darbai)';
   $handler->display->display_options['fields']['field_purchase_type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_purchase_type']['type'] = 'taxonomy_term_reference_plain';
-  /* Laukelis: Turinys: Pirkimo būdas */
+  /* Field: Content: Pirkimo būdas */
   $handler->display->display_options['fields']['field_purchase_method']['id'] = 'field_purchase_method';
   $handler->display->display_options['fields']['field_purchase_method']['table'] = 'field_data_field_purchase_method';
   $handler->display->display_options['fields']['field_purchase_method']['field'] = 'field_purchase_method';
   $handler->display->display_options['fields']['field_purchase_method']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_purchase_method']['type'] = 'taxonomy_term_reference_plain';
-  /* Laukelis: Turinys: Priežastys dėl pirkimo būdo */
+  /* Field: Content: Priežastys dėl pirkimo būdo */
   $handler->display->display_options['fields']['field_purchase_causes']['id'] = 'field_purchase_causes';
   $handler->display->display_options['fields']['field_purchase_causes']['table'] = 'field_data_field_purchase_causes';
   $handler->display->display_options['fields']['field_purchase_causes']['field'] = 'field_purchase_causes';
   $handler->display->display_options['fields']['field_purchase_causes']['label'] = 'Priežastys, dėl kurių pasirinktas nurodytas pirkimo būdas (nurodomas Taisyklių punktas)';
   $handler->display->display_options['fields']['field_purchase_causes']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Redagavimo nuoroda */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
@@ -310,14 +310,14 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['text'] = '[redaguoti]';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Turinys: Paskelbtas */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Turinys: Tipas */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -325,14 +325,14 @@ function vp_forms_views_default_views() {
     'forms' => 'forms',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Turinys: Pirkimo pradžios data (field_purchase_start_date) */
+  /* Filter criterion: Content: Pirkimo pradžios data (field_purchase_start_date) */
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['id'] = 'field_purchase_start_date_value_1';
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['table'] = 'field_data_field_purchase_start_date';
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['field'] = 'field_purchase_start_date_value';
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['operator'] = 'not empty';
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['group'] = 1;
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['form_type'] = 'date_popup';
-  /* Filter criterion: Turinys: Pavadinimas */
+  /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
   $handler->display->display_options['filters']['title']['field'] = 'title';
@@ -348,7 +348,7 @@ function vp_forms_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Turinys: Pirkimo pradžios data (field_purchase_start_date) */
+  /* Filter criterion: Content: Pirkimo pradžios data (field_purchase_start_date) */
   $handler->display->display_options['filters']['field_purchase_start_date_value_2']['id'] = 'field_purchase_start_date_value_2';
   $handler->display->display_options['filters']['field_purchase_start_date_value_2']['table'] = 'field_data_field_purchase_start_date';
   $handler->display->display_options['filters']['field_purchase_start_date_value_2']['field'] = 'field_purchase_start_date_value';
@@ -445,32 +445,32 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Laukelis: Turinys: Pirkimo objektas */
+  /* Field: Content: Pirkimo objektas */
   $handler->display->display_options['fields']['field_purchase_title_full']['id'] = 'field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['table'] = 'field_data_field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['field'] = 'field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['label'] = 'Pirkimo objektas (pavadinimas)';
   $handler->display->display_options['fields']['field_purchase_title_full']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Laimėjusio dalyvio pavadinimas */
+  /* Field: Content: Laimėjusio dalyvio pavadinimas */
   $handler->display->display_options['fields']['field_winner_title']['id'] = 'field_winner_title';
   $handler->display->display_options['fields']['field_winner_title']['table'] = 'field_data_field_winner_title';
   $handler->display->display_options['fields']['field_winner_title']['field'] = 'field_winner_title';
-  /* Laukelis: Turinys: Numatoma bendra sutarties vertė Eur (su PVM) */
+  /* Field: Content: Numatoma bendra sutarties vertė Eur (su PVM) */
   $handler->display->display_options['fields']['field_purchase_price']['id'] = 'field_purchase_price';
   $handler->display->display_options['fields']['field_purchase_price']['table'] = 'field_data_field_purchase_price';
   $handler->display->display_options['fields']['field_purchase_price']['field'] = 'field_purchase_price';
-  /* Laukelis: Turinys: Priežastys, dėl kurių pasirinktas šis laimėtojas */
+  /* Field: Content: Priežastys, dėl kurių pasirinktas šis laimėtojas */
   $handler->display->display_options['fields']['field_winner_reason']['id'] = 'field_winner_reason';
   $handler->display->display_options['fields']['field_winner_reason']['table'] = 'field_data_field_winner_reason';
   $handler->display->display_options['fields']['field_winner_reason']['field'] = 'field_winner_reason';
   $handler->display->display_options['fields']['field_winner_reason']['type'] = 'select_or_other_formatter';
-  /* Laukelis: Turinys: Subrangovų dalis */
+  /* Field: Content: Subrangovų dalis */
   $handler->display->display_options['fields']['field_subcontractor_perc']['id'] = 'field_subcontractor_perc';
   $handler->display->display_options['fields']['field_subcontractor_perc']['table'] = 'field_data_field_subcontractor_perc';
   $handler->display->display_options['fields']['field_subcontractor_perc']['field'] = 'field_subcontractor_perc';
   $handler->display->display_options['fields']['field_subcontractor_perc']['label'] = 'Jei žinoma, nurodyti pirkimo sutarties įsipareigojimų dalį, kuriai laimėtojas ketina pasitelkti trečiuosius asmenis, kaip subran';
   $handler->display->display_options['fields']['field_subcontractor_perc']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Redagavimo nuoroda */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
@@ -478,26 +478,26 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['edit_node']['text'] = '[redaguoti]';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Išrikiavimo kriterijus: Turinys: Laimėtojų nustatymo data (field_winner_date) */
+  /* Sort criterion: Content: Laimėtojų nustatymo data (field_winner_date) */
   $handler->display->display_options['sorts']['field_winner_date_value']['id'] = 'field_winner_date_value';
   $handler->display->display_options['sorts']['field_winner_date_value']['table'] = 'field_data_field_winner_date';
   $handler->display->display_options['sorts']['field_winner_date_value']['field'] = 'field_winner_date_value';
   $handler->display->display_options['sorts']['field_winner_date_value']['order'] = 'DESC';
-  /* Išrikiavimo kriterijus: Turinys: Įrašo data */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['granularity'] = 'hour';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Turinys: Paskelbtas */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Turinys: Tipas */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -505,14 +505,14 @@ function vp_forms_views_default_views() {
     'forms' => 'forms',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Turinys: Laimėtojų nustatymo data (field_winner_date) */
+  /* Filter criterion: Content: Laimėtojų nustatymo data (field_winner_date) */
   $handler->display->display_options['filters']['field_winner_date_value_1']['id'] = 'field_winner_date_value_1';
   $handler->display->display_options['filters']['field_winner_date_value_1']['table'] = 'field_data_field_winner_date';
   $handler->display->display_options['filters']['field_winner_date_value_1']['field'] = 'field_winner_date_value';
   $handler->display->display_options['filters']['field_winner_date_value_1']['operator'] = 'not empty';
   $handler->display->display_options['filters']['field_winner_date_value_1']['group'] = 1;
   $handler->display->display_options['filters']['field_winner_date_value_1']['year_range'] = '-3:+0';
-  /* Filter criterion: Turinys: Pavadinimas */
+  /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
   $handler->display->display_options['filters']['title']['field'] = 'title';
@@ -528,7 +528,7 @@ function vp_forms_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Turinys: Laimėtojų nustatymo data (field_winner_date) */
+  /* Filter criterion: Content: Laimėtojų nustatymo data (field_winner_date) */
   $handler->display->display_options['filters']['field_winner_date_value_2']['id'] = 'field_winner_date_value_2';
   $handler->display->display_options['filters']['field_winner_date_value_2']['table'] = 'field_data_field_winner_date';
   $handler->display->display_options['filters']['field_winner_date_value_2']['field'] = 'field_winner_date_value';
@@ -617,27 +617,27 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Laukelis: Turinys: Pirkimo objektas */
+  /* Field: Content: Pirkimo objektas */
   $handler->display->display_options['fields']['field_purchase_title_full']['id'] = 'field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['table'] = 'field_data_field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['field'] = 'field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['label'] = 'Pirkimo objektas (pavadinimas)';
   $handler->display->display_options['fields']['field_purchase_title_full']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Laimėjusio dalyvio pavadinimas */
+  /* Field: Content: Laimėjusio dalyvio pavadinimas */
   $handler->display->display_options['fields']['field_winner_title']['id'] = 'field_winner_title';
   $handler->display->display_options['fields']['field_winner_title']['table'] = 'field_data_field_winner_title';
   $handler->display->display_options['fields']['field_winner_title']['field'] = 'field_winner_title';
-  /* Laukelis: Turinys: Bendra galutinė sutarties vertė Eur (su PVM) */
+  /* Field: Content: Bendra galutinė sutarties vertė Eur (su PVM) */
   $handler->display->display_options['fields']['field_final_price']['id'] = 'field_final_price';
   $handler->display->display_options['fields']['field_final_price']['table'] = 'field_data_field_final_price';
   $handler->display->display_options['fields']['field_final_price']['field'] = 'field_final_price';
-  /* Laukelis: Turinys: Subrangovų dalis */
+  /* Field: Content: Subrangovų dalis */
   $handler->display->display_options['fields']['field_subcontractor_perc']['id'] = 'field_subcontractor_perc';
   $handler->display->display_options['fields']['field_subcontractor_perc']['table'] = 'field_data_field_subcontractor_perc';
   $handler->display->display_options['fields']['field_subcontractor_perc']['field'] = 'field_subcontractor_perc';
   $handler->display->display_options['fields']['field_subcontractor_perc']['label'] = 'Jei žinoma, nurodyti pirkimo sutarties įsipareigojimų dalį, kuriai laimėtojas ketina pasitelkti trečiuosius asmenis, kaip subran';
   $handler->display->display_options['fields']['field_subcontractor_perc']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Redagavimo nuoroda */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
@@ -646,14 +646,14 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['text'] = '[redaguoti]';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Turinys: Paskelbtas */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Turinys: Tipas */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -661,14 +661,14 @@ function vp_forms_views_default_views() {
     'forms' => 'forms',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Turinys: Sutarties sudarymo data (field_contract_date) */
+  /* Filter criterion: Content: Sutarties sudarymo data (field_contract_date) */
   $handler->display->display_options['filters']['field_contract_date_value_1']['id'] = 'field_contract_date_value_1';
   $handler->display->display_options['filters']['field_contract_date_value_1']['table'] = 'field_data_field_contract_date';
   $handler->display->display_options['filters']['field_contract_date_value_1']['field'] = 'field_contract_date_value';
   $handler->display->display_options['filters']['field_contract_date_value_1']['operator'] = 'not empty';
   $handler->display->display_options['filters']['field_contract_date_value_1']['group'] = 1;
   $handler->display->display_options['filters']['field_contract_date_value_1']['year_range'] = '-3:+0';
-  /* Filter criterion: Turinys: Pavadinimas */
+  /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
   $handler->display->display_options['filters']['title']['field'] = 'title';
@@ -684,7 +684,7 @@ function vp_forms_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Turinys: Sutarties sudarymo data (field_contract_date) */
+  /* Filter criterion: Content: Sutarties sudarymo data (field_contract_date) */
   $handler->display->display_options['filters']['field_contract_date_value_2']['id'] = 'field_contract_date_value_2';
   $handler->display->display_options['filters']['field_contract_date_value_2']['table'] = 'field_data_field_contract_date';
   $handler->display->display_options['filters']['field_contract_date_value_2']['field'] = 'field_contract_date_value';
@@ -724,12 +724,12 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'paskutinis  »';
   $handler->display->display_options['defaults']['empty'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Laukelis: Turinys: Nid */
+  /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
-  /* Laukelis: Redagavimas */
+  /* Field: Redagavimas */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -740,7 +740,7 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nothing']['alter']['path'] = 'node/[nid]/edit?destination=node';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Pirkimo objektas */
+  /* Field: Content: Pirkimo objektas */
   $handler->display->display_options['fields']['field_purchase_title_full']['id'] = 'field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['table'] = 'field_data_field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['field'] = 'field_purchase_title_full';
@@ -749,7 +749,7 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['field_purchase_title_full']['alter']['text'] = '[field_purchase_title_full] </ br>
 [nothing]';
   $handler->display->display_options['fields']['field_purchase_title_full']['element_label_colon'] = FALSE;
-  /* Laukelis: F1 */
+  /* Field: F1 */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
@@ -758,7 +758,7 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nothing_1']['alter']['text'] = 'F1';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
-  /* Laukelis: F2 */
+  /* Field: F2 */
   $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
   $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
@@ -767,7 +767,7 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['nothing_2']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = 'F2';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
-  /* Laukelis: F3 */
+  /* Field: F3 */
   $handler->display->display_options['fields']['nothing_3']['id'] = 'nothing_3';
   $handler->display->display_options['fields']['nothing_3']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
@@ -776,7 +776,7 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nothing_3']['alter']['text'] = 'F3';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
-  /* Laukelis: F1 - F3 būsena */
+  /* Field: F1 - F3 būsena */
   $handler->display->display_options['fields']['nothing_4']['id'] = 'nothing_4';
   $handler->display->display_options['fields']['nothing_4']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_4']['field'] = 'nothing';
@@ -787,7 +787,7 @@ function vp_forms_views_default_views() {
 [nothing_3]';
   $handler->display->display_options['fields']['nothing_4']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Turinys: Author uid */
+  /* Contextual filter: Content: Author uid */
   $handler->display->display_options['arguments']['uid']['id'] = 'uid';
   $handler->display->display_options['arguments']['uid']['table'] = 'node';
   $handler->display->display_options['arguments']['uid']['field'] = 'uid';
@@ -799,21 +799,21 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['arguments']['uid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Turinys: Paskelbtas */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Turinys: Tipas */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'forms' => 'forms',
   );
-  /* Filter criterion: Turinys: Pirkimo pradžios data (field_purchase_start_date) */
+  /* Filter criterion: Content: Pirkimo pradžios data (field_purchase_start_date) */
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['id'] = 'field_purchase_start_date_value_1';
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['table'] = 'field_data_field_purchase_start_date';
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['field'] = 'field_purchase_start_date_value';
@@ -838,12 +838,12 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'paskutinis  »';
   $handler->display->display_options['defaults']['empty'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Laukelis: Turinys: Nid */
+  /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
-  /* Laukelis: Redagavimas */
+  /* Field: Redagavimas */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -854,7 +854,7 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nothing']['alter']['path'] = 'node/[nid]/edit?destination=node';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Laukelis: Turinys: Pirkimo objektas */
+  /* Field: Content: Pirkimo objektas */
   $handler->display->display_options['fields']['field_purchase_title_full']['id'] = 'field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['table'] = 'field_data_field_purchase_title_full';
   $handler->display->display_options['fields']['field_purchase_title_full']['field'] = 'field_purchase_title_full';
@@ -863,7 +863,7 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['field_purchase_title_full']['alter']['text'] = '[field_purchase_title_full] </ br>
 [nothing]';
   $handler->display->display_options['fields']['field_purchase_title_full']['element_label_colon'] = FALSE;
-  /* Laukelis: F1 */
+  /* Field: F1 */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
@@ -872,7 +872,7 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nothing_1']['alter']['text'] = 'F1';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
-  /* Laukelis: F2 */
+  /* Field: F2 */
   $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
   $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
@@ -881,7 +881,7 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['nothing_2']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = 'F2';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
-  /* Laukelis: F3 */
+  /* Field: F3 */
   $handler->display->display_options['fields']['nothing_3']['id'] = 'nothing_3';
   $handler->display->display_options['fields']['nothing_3']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
@@ -890,7 +890,7 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nothing_3']['alter']['text'] = 'F3';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
-  /* Laukelis: F1 - F3 būsena */
+  /* Field: F1 - F3 būsena */
   $handler->display->display_options['fields']['nothing_4']['id'] = 'nothing_4';
   $handler->display->display_options['fields']['nothing_4']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_4']['field'] = 'nothing';
@@ -903,21 +903,21 @@ function vp_forms_views_default_views() {
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Turinys: Paskelbtas */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Turinys: Tipas */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'forms' => 'forms',
   );
-  /* Filter criterion: Turinys: Pirkimo pradžios data (field_purchase_start_date) */
+  /* Filter criterion: Content: Pirkimo pradžios data (field_purchase_start_date) */
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['id'] = 'field_purchase_start_date_value_1';
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['table'] = 'field_data_field_purchase_start_date';
   $handler->display->display_options['filters']['field_purchase_start_date_value_1']['field'] = 'field_purchase_start_date_value';
@@ -954,6 +954,7 @@ function vp_forms_views_default_views() {
     t('Pirkimo pradžios data (field_purchase_start_date)'),
     t('F1'),
     t('Informacija apie pradedamus pirkimus'),
+    t('more'),
     t('[redaguoti]'),
     t('Pavadinimas'),
     t('Data'),

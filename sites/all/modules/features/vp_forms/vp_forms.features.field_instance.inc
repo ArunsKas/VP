@@ -10,7 +10,7 @@
 function vp_forms_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-forms-field_contract_date'
+  // Exported field_instance: 'node-forms-field_contract_date'.
   $field_instances['node-forms-field_contract_date'] = array(
     'bundle' => 'forms',
     'deleted' => 0,
@@ -25,6 +25,7 @@ function vp_forms_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 6,
@@ -63,7 +64,7 @@ function vp_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-forms-field_final_price'
+  // Exported field_instance: 'node-forms-field_final_price'.
   $field_instances['node-forms-field_final_price'] = array(
     'bundle' => 'forms',
     'default_value' => NULL,
@@ -103,7 +104,7 @@ function vp_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-forms-field_purchase_causes'
+  // Exported field_instance: 'node-forms-field_purchase_causes'.
   $field_instances['node-forms-field_purchase_causes'] = array(
     'bundle' => 'forms',
     'default_value' => NULL,
@@ -143,7 +144,7 @@ function vp_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-forms-field_purchase_method'
+  // Exported field_instance: 'node-forms-field_purchase_method'.
   $field_instances['node-forms-field_purchase_method'] = array(
     'bundle' => 'forms',
     'default_value' => NULL,
@@ -180,7 +181,7 @@ function vp_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-forms-field_purchase_price'
+  // Exported field_instance: 'node-forms-field_purchase_price'.
   $field_instances['node-forms-field_purchase_price'] = array(
     'bundle' => 'forms',
     'default_value' => NULL,
@@ -220,7 +221,7 @@ function vp_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-forms-field_purchase_start_date'
+  // Exported field_instance: 'node-forms-field_purchase_start_date'.
   $field_instances['node-forms-field_purchase_start_date'] = array(
     'bundle' => 'forms',
     'deleted' => 0,
@@ -235,6 +236,7 @@ function vp_forms_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 5,
@@ -273,7 +275,7 @@ function vp_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-forms-field_purchase_title_full'
+  // Exported field_instance: 'node-forms-field_purchase_title_full'.
   $field_instances['node-forms-field_purchase_title_full'] = array(
     'bundle' => 'forms',
     'default_value' => NULL,
@@ -313,7 +315,7 @@ function vp_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-forms-field_purchase_type'
+  // Exported field_instance: 'node-forms-field_purchase_type'.
   $field_instances['node-forms-field_purchase_type'] = array(
     'bundle' => 'forms',
     'default_value' => NULL,
@@ -350,7 +352,7 @@ function vp_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-forms-field_subcontractor_perc'
+  // Exported field_instance: 'node-forms-field_subcontractor_perc'.
   $field_instances['node-forms-field_subcontractor_perc'] = array(
     'bundle' => 'forms',
     'default_value' => array(
@@ -394,7 +396,7 @@ function vp_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-forms-field_winner_date'
+  // Exported field_instance: 'node-forms-field_winner_date'.
   $field_instances['node-forms-field_winner_date'] = array(
     'bundle' => 'forms',
     'deleted' => 0,
@@ -409,6 +411,7 @@ function vp_forms_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 8,
@@ -447,10 +450,14 @@ function vp_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-forms-field_winner_reason'
+  // Exported field_instance: 'node-forms-field_winner_reason'.
   $field_instances['node-forms-field_winner_reason'] = array(
     'bundle' => 'forms',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'lowest_price',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -488,7 +495,7 @@ dok_kriterij|perkančiosios organizacijos pirkimo dokumentuose nustatyti su pirk
         'other' => 'Kita',
         'other_size' => 60,
         'other_title' => '',
-        'other_unknown_defaults' => 'other',
+        'other_unknown_defaults' => 'ignore',
         'sort_options' => 0,
       ),
       'type' => 'select_or_other',
@@ -496,7 +503,7 @@ dok_kriterij|perkančiosios organizacijos pirkimo dokumentuose nustatyti su pirk
     ),
   );
 
-  // Exported field_instance: 'node-forms-field_winner_title'
+  // Exported field_instance: 'node-forms-field_winner_title'.
   $field_instances['node-forms-field_winner_title'] = array(
     'bundle' => 'forms',
     'default_value' => NULL,

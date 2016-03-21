@@ -10,7 +10,7 @@
 function vp_info_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-vp_info-body'
+  // Exported field_instance: 'node-vp_info-body'.
   $field_instances['node-vp_info-body'] = array(
     'bundle' => 'vp_info',
     'default_value' => NULL,
@@ -55,7 +55,7 @@ function vp_info_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-vp_info-field_info_group'
+  // Exported field_instance: 'node-vp_info-field_info_group'.
   $field_instances['node-vp_info-field_info_group'] = array(
     'bundle' => 'vp_info',
     'default_value' => array(
@@ -96,7 +96,7 @@ function vp_info_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-vp_info-field_title_full'
+  // Exported field_instance: 'node-vp_info-field_title_full'.
   $field_instances['node-vp_info-field_title_full'] = array(
     'bundle' => 'vp_info',
     'default_value' => NULL,

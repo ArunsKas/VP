@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function vp_forms_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -35,7 +35,7 @@ function vp_forms_field_group_info() {
       ),
     ),
   );
-  $export['group_f1_f2_f3_group|node|forms|form'] = $field_group;
+  $field_groups['group_f1_f2_f3_group|node|forms|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -64,7 +64,7 @@ function vp_forms_field_group_info() {
       ),
     ),
   );
-  $export['group_f1|node|forms|default'] = $field_group;
+  $field_groups['group_f1|node|forms|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -94,7 +94,7 @@ function vp_forms_field_group_info() {
       ),
     ),
   );
-  $export['group_f1|node|forms|form'] = $field_group;
+  $field_groups['group_f1|node|forms|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -124,7 +124,7 @@ function vp_forms_field_group_info() {
       ),
     ),
   );
-  $export['group_f2|node|forms|default'] = $field_group;
+  $field_groups['group_f2|node|forms|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -155,7 +155,7 @@ function vp_forms_field_group_info() {
       ),
     ),
   );
-  $export['group_f2|node|forms|form'] = $field_group;
+  $field_groups['group_f2|node|forms|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -182,7 +182,7 @@ function vp_forms_field_group_info() {
       ),
     ),
   );
-  $export['group_f3|node|forms|default'] = $field_group;
+  $field_groups['group_f3|node|forms|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -210,7 +210,14 @@ function vp_forms_field_group_info() {
       ),
     ),
   );
-  $export['group_f3|node|forms|form'] = $field_group;
+  $field_groups['group_f3|node|forms|form'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('F1');
+  t('F1, F2, F3');
+  t('F2');
+  t('F3');
+
+  return $field_groups;
 }

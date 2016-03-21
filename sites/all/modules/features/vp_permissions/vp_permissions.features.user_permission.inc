@@ -60,6 +60,16 @@ function vp_permissions_user_default_permissions() {
     'module' => 'internal_nodes',
   );
 
+  // Exported permission: 'clone own nodes'.
+  $permissions['clone own nodes'] = array(
+    'name' => 'clone own nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'padalinio redaktorius' => 'padalinio redaktorius',
+    ),
+    'module' => 'clone',
+  );
+
   // Exported permission: 'create forms content'.
   $permissions['create forms content'] = array(
     'name' => 'create forms content',
@@ -112,6 +122,15 @@ function vp_permissions_user_default_permissions() {
       'padalinio redaktorius' => 'padalinio redaktorius',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'override forms published option'.
+  $permissions['override forms published option'] = array(
+    'name' => 'override forms published option',
+    'roles' => array(
+      'padalinio redaktorius' => 'padalinio redaktorius',
+    ),
+    'module' => 'override_node_options',
   );
 
   // Exported permission: 'override vp_info authored by option'.
